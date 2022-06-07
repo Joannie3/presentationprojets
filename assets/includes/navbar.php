@@ -1,6 +1,6 @@
 <div class="menugeneral">
   
-<div class="logogauche">logo</div>
+<div class="logogauche"><a href="index.php">Logo</a></div>
 
 <div class="menudroite">Projet 1 -- Projet 2 -- Projet 3
 

@@ -5,9 +5,8 @@ body{
 
 .container{
     width: 100%;
-    height: 500px;
     border : 2px solid black;
-    padding : 10px;
+    margin-top : 50px;
 }
 
 .titre1{
@@ -22,4 +21,67 @@ body{
 
 .affirmatif{
     color : green;
+}
+
+.listeprojet{
+    width: 80%;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(32%, 3fr));
+    row-gap: 25px;
+    column-gap: 25px;
+}
+
+.cadreprojet{
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 300px;
+    margin-right: 5%;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+}
+
+.imageprojet{
+    /* border: 2px solid blue; */
+    height: 100%;
+    position: relative;
+}
+
+.imageprojet:hover img{
+    filter: blur(3px);
+}
+
+
+
+
+.imageprojet img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.descriptionprojet{
+display: none;
+}
+
+.imageprojet:hover .descriptionprojet{
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(46, 46, 46, 0.636);
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #fff;
+}
+
+.lignedesriptionprojet{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3%;
 }

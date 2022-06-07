@@ -1,0 +1,25 @@
+body{
+    margin : 0;
+    padding : 0;
+}
+
+.container{
+    width: 100%;
+    height: 500px;
+    border : 2px solid black;
+    padding : 10px;
+}
+
+.titre1{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.negatif{
+    color: red;
+}
+
+.affirmatif{
+    color : green;
+}

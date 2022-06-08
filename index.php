@@ -3,70 +3,293 @@ session_start();
 
 include 'assets/includes/config.php';
 include 'assets/includes/header.php';
-include 'assets/includes/navbar.php';
-
-$sqlprojets = "SELECT * FROM projets p, utilisateurs u
-WHERE p.id_utilisateurs=u.id_utilisateurs";
-$requeteprojets = $db->prepare($sqlprojets);
-$requeteprojets->execute();
-
 
 
 ?>
 
 <div class="container">
 
+
+<div class="titreprojet">
+    <div class="titreplacement">MES PROJETS</div> 
+    <div class="titreplacement2">Vous pouvez consulter mes différents projets</div>
+
+    <div class="fleche2">
+
+    <div class="fleche"> > </div>
+
+    </div>
+
+
+
+</div>
+
+<?php include 'assets/includes/navbar.php'; ?>
+
     <div class="listeprojet">
-    
-        <?php
-        while ($afficheprojets = $requeteprojets->fetch())
-        {
-
-            $datecreation = date("d/m/Y",strtotime($afficheprojets['datecreation_projets']));
-
-        ?>
 
         <div class="cadreprojet">
             <div class="imageprojet">
-                <img src="assets/img/projets/<?php echo $afficheprojets["image_projets"]; ?>" alt="">
+                <img src="assets/img/projets/ardennesm.png" alt="">
                     <div class="descriptionprojet">
                         <div class="lignedesriptionprojet">
                             <div class="gauchedescriptionprojet">Projet : </div>
-                            <div class="droitedescriptionprojet"> <?php echo $afficheprojets["nom_projets"]; ?></div>
+                            <div class="droitedescriptionprojet">  Nom du Projet</div>
                         </div>
 
                         <div class="lignedesriptionprojet">
                             <div class="gauchedescriptionprojet">Client : </div>
-                            <div class="droitedescriptionprojet"> <?php echo $afficheprojets["client_projets"]; ?></div>
+                            <div class="droitedescriptionprojet"> Nom du client</div>
                         </div>
 
                         <div class="lignedesriptionprojet">
                             <div class="gauchedescriptionprojet">Description : </div>
-                            <div class="droitedescriptionprojet"> <?php echo $afficheprojets["description_projets"]; ?></div>
+                            <div class="droitedescriptionprojet"> Description du projet</div>
                         </div>
 
                         <div class="lignedesriptionprojet">
                             <div class="gauchedescriptionprojet">Ajouté par : </div>
-                            <div class="droitedescriptionprojet"> <?php echo $afficheprojets["prenom_utilisateurs"]; ?></div>
+                            <div class="droitedescriptionprojet"> Prénom </div>
                         </div>
 
                         <div class="lignedesriptionprojet">
                             <div class="gauchedescriptionprojet">Le : </div>
-                            <div class="droitedescriptionprojet"> <?php echo $datecreation; ?></div>
+                            <div class="droitedescriptionprojet"> 00/00/0000</div>
                         </div>
                     </div>
             </div>
-
         </div>
 
-        <?php
-        }
-        ?>
+        <div class="cadreprojet">
+            <div class="imageprojet">
+                <img src="assets/img/projets/ardennesm.png" alt="">
+                    <div class="descriptionprojet">
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Projet : </div>
+                            <div class="droitedescriptionprojet">  Nom du Projet</div>
+                        </div>
+
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Client : </div>
+                            <div class="droitedescriptionprojet"> Nom du client</div>
+                        </div>
+
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Description : </div>
+                            <div class="droitedescriptionprojet"> Description du projet</div>
+                        </div>
+
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Ajouté par : </div>
+                            <div class="droitedescriptionprojet"> Prénom </div>
+                        </div>
+
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Le : </div>
+                            <div class="droitedescriptionprojet"> 00/00/0000</div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="cadreprojet">
+            <div class="imageprojet">
+                <img src="assets/img/projets/ardennesm.png" alt="">
+                    <div class="descriptionprojet">
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Projet : </div>
+                            <div class="droitedescriptionprojet">  Nom du Projet</div>
+                        </div>
+
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Client : </div>
+                            <div class="droitedescriptionprojet"> Nom du client</div>
+                        </div>
+
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Description : </div>
+                            <div class="droitedescriptionprojet"> Description du projet</div>
+                        </div>
+
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Ajouté par : </div>
+                            <div class="droitedescriptionprojet"> Prénom </div>
+                        </div>
+
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Le : </div>
+                            <div class="droitedescriptionprojet"> 00/00/0000</div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="cadreprojet">
+            <div class="imageprojet">
+                <img src="assets/img/projets/ardennesm.png" alt="">
+                    <div class="descriptionprojet">
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Projet : </div>
+                            <div class="droitedescriptionprojet">  Nom du Projet</div>
+                        </div>
+
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Client : </div>
+                            <div class="droitedescriptionprojet"> Nom du client</div>
+                        </div>
+
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Description : </div>
+                            <div class="droitedescriptionprojet"> Description du projet</div>
+                        </div>
+
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Ajouté par : </div>
+                            <div class="droitedescriptionprojet"> Prénom </div>
+                        </div>
+
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Le : </div>
+                            <div class="droitedescriptionprojet"> 00/00/0000</div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="cadreprojet">
+            <div class="imageprojet">
+                <img src="assets/img/projets/ardennesm.png" alt="">
+                    <div class="descriptionprojet">
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Projet : </div>
+                            <div class="droitedescriptionprojet">  Nom du Projet</div>
+                        </div>
+
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Client : </div>
+                            <div class="droitedescriptionprojet"> Nom du client</div>
+                        </div>
+
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Description : </div>
+                            <div class="droitedescriptionprojet"> Description du projet</div>
+                        </div>
+
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Ajouté par : </div>
+                            <div class="droitedescriptionprojet"> Prénom </div>
+                        </div>
+
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Le : </div>
+                            <div class="droitedescriptionprojet"> 00/00/0000</div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="cadreprojet">
+            <div class="imageprojet">
+                <img src="assets/img/projets/ardennesm.png" alt="">
+                    <div class="descriptionprojet">
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Projet : </div>
+                            <div class="droitedescriptionprojet">  Nom du Projet</div>
+                        </div>
+
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Client : </div>
+                            <div class="droitedescriptionprojet"> Nom du client</div>
+                        </div>
+
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Description : </div>
+                            <div class="droitedescriptionprojet"> Description du projet</div>
+                        </div>
+
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Ajouté par : </div>
+                            <div class="droitedescriptionprojet"> Prénom </div>
+                        </div>
+
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Le : </div>
+                            <div class="droitedescriptionprojet"> 00/00/0000</div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="cadreprojet">
+            <div class="imageprojet">
+                <img src="assets/img/projets/ardennesm.png" alt="">
+                    <div class="descriptionprojet">
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Projet : </div>
+                            <div class="droitedescriptionprojet">  Nom du Projet</div>
+                        </div>
+
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Client : </div>
+                            <div class="droitedescriptionprojet"> Nom du client</div>
+                        </div>
+
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Description : </div>
+                            <div class="droitedescriptionprojet"> Description du projet</div>
+                        </div>
+
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Ajouté par : </div>
+                            <div class="droitedescriptionprojet"> Prénom </div>
+                        </div>
+
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Le : </div>
+                            <div class="droitedescriptionprojet"> 00/00/0000</div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="cadreprojet">
+            <div class="imageprojet">
+                <img src="assets/img/projets/ardennesm.png" alt="">
+                    <div class="descriptionprojet">
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Projet : </div>
+                            <div class="droitedescriptionprojet">  Nom du Projet</div>
+                        </div>
+
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Client : </div>
+                            <div class="droitedescriptionprojet"> Nom du client</div>
+                        </div>
+
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Description : </div>
+                            <div class="droitedescriptionprojet"> Description du projet</div>
+                        </div>
+
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Ajouté par : </div>
+                            <div class="droitedescriptionprojet"> Prénom </div>
+                        </div>
+
+                        <div class="lignedesriptionprojet">
+                            <div class="gauchedescriptionprojet">Le : </div>
+                            <div class="droitedescriptionprojet"> 00/00/0000</div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+
 
     </div>
 
 </div>
 
+<script src="assets/js/nav.js"></script>
 
 <?php
 

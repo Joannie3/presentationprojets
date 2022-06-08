@@ -10,6 +10,11 @@
     <link href="assets/css/projet.css" rel="stylesheet">
     <link href="assets/css/footer.css" rel="stylesheet">
 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     
     <title>Listing des projets</title>

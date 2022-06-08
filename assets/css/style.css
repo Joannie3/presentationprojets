@@ -7,6 +7,7 @@ body{
     width: 100%;
     border : 2px solid black;
     margin-top : 50px;
+    z-index: -50;
 }
 
 .titre1{
@@ -16,7 +17,7 @@ body{
 }
 
 .negatif{
-    color: red;
+    color: red !important; 
 }
 
 .affirmatif{

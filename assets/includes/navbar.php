@@ -1,28 +1,21 @@
-<div class="menugeneral">
-  
-<div class="logogauche"><a href="index.php">Logo</a></div>
+<nav class="navbar light-mode">
 
-<div class="menudroite">Projet 1 -- Projet 2 -- Projet 3
+    <div class="navbar__logo"><img src="assets/img/logo2.png" alt=""></div>
 
-    <?php
-        if (isset($_SESSION["membres"]["id"]))
-        {
-            echo "<a href='ajouterprojet.php'>Ajouter un projet</a>";
+    <ul class="navbar__links">
 
-            echo "<a href='deconnexion.php'>Se déconnecter</a>";
-        }
-        else 
-        {
+        <li class="navbar__link first"><a href="#">Accueil</a></li>
+        <li class="navbar__link two "><a href="#">Service</a></li>
+        <li class="navbar__link third"><a href="#">Inscription</a></li>
+        <li class="navbar__link four"><a href="#">Connexion</a></li>
 
-    
-    ?>
+    </ul>
 
-<a href="inscription.php">Inscription</a> - <a href="connexion.php">Connexion</a>
+    <button class="burger">
 
-    <?php
-        }
-    ?>
+        <span class="bar"></span>
 
-</div>
+    </button>
+</nav>
 
-</div>
+<script src="assets/js/menu.js"></script>

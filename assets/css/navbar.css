@@ -16,19 +16,22 @@
 /* ici se sera le mode blanc */
 .light-mode{
     --navbar-color : #222;
-    --navbar-bg-color: #F0F0F0;
+    --navbar-bg-color: #fff;
+    --navbar-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 /* ici sera le mode noir */
 .dark-mode{
     --navbar-color : #FFF;
     --navbar-bg-color: #000;
+    --navbar-box-shadow: 0px 0px 0px 0px;
 }
 
 /* ici c'est ma liste de menu en ul  */
-ul{
+.navbar ul{
     list-style: none;
     font-family: 'Poppins', sans-serif;
+    margin-right: 50px;
 }
 
 /*navbar*/
@@ -41,10 +44,11 @@ ul{
     padding: 10px;
     color : var(--navbar-color);
     background: var(--navbar-bg-color);
-    box-shadow: 3px 1px 17px -5px grey;
+    box-shadow: var(--navbar-box-shadow);
     position: sticky;
     top : 0;
     z-index: 10000;
+    transition : background-color 1.5s;
 }
 
 .navbar__links{
@@ -70,6 +74,7 @@ ul{
 .navbar__logo{
     width: 83px;
     height: 50px;
+    margin-left: 50px;
 }
 
 .navbar__logo img{
@@ -208,3 +213,5 @@ ul{
 }
 
 /* animation */
+
+

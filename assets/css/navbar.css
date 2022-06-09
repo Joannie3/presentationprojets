@@ -191,6 +191,10 @@
         transition: all 1.3s ease-out;
     }
 
+    .navbar ul{
+        margin-right: 0px;
+    }
+
 }
 
 
@@ -208,6 +212,10 @@
 
     .navbar__link:hover > a::after{
         width: 100%;
+    }
+
+    .navbar ul{
+        margin-right: 50px;
     }
 
 }
